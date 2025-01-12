@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Flask - Notebooks</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Machine Learning Dashdoard</i></h1>
+    </header>
+    <main class="container">
+        <section class="buttons-container">
+            <button class="notebook-btn" onclick="executeNotebook(1)">
+                <i class="fas fa-chart-line"></i> Regresión Lineal
+            </button>
+            <button class="notebook-btn" onclick="executeNotebook(2)">
+                <i class="fas fa-chart-pie"></i> Regresión Logística
+            </button>
+            <button class="notebook-btn" onclick="executeNotebook(3)">
+                <i class="fas fa-database"></i> Preparación del DataSet
+            </button>
+            <button class="notebook-btn" onclick="executeNotebook(4)">
+                <i class="fas fa-chart-bar"></i> Visualización de los Datos
+            </button>
+            <button class="notebook-btn" onclick="executeNotebook(5)">
+                <i class="fas fa-tools"></i> Transformadores y Pipelines
+            </button>
+            <button class="notebook-btn" onclick="executeNotebook(6)">
+                <i class="fas fa-check-circle"></i> Evaluación de Resultados
+            </button>
+            <button class="notebook-btn" onclick="executeNotebook(7)">
+                <i class="fas fa-check-"></i> Support Vector Machine
+            </button>
+        </section>
+        <section id="notebook-content" class="output-container">
+        </section>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>

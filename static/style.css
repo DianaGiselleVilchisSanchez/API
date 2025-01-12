@@ -1,0 +1,56 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #9aceff, #fad0c4); /* Gradiente rosa suave */
+    color: #333;
+    text-align: center;
+}
+
+
+header {
+    padding: 20px;
+    background: #9861ff;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de botones */
+.buttons-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Botones */
+button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #c0c0c0, #df9aff);
+    color: rgb(8, 8, 8);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #e61997;
+    transform: translateY(-3px);
+}
+
+#notebook-content {
+    margin: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #ff6f61;
+}
+
+#notebook-content p {
+    font-size: 1.1rem;
+}
