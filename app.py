@@ -13,7 +13,7 @@ def convert_notebook_to_html(notebook_path):
         notebook_content = nbformat.read(nb_file, as_version=4)
 
     html_exporter = HTMLExporter()
-    html_exporter.exclude_input = True # Asegura incluir salidas de las celdas (gráficas)
+    html_exporter.exclude_input = True  # Asegura incluir salidas de las celdas (gráficas)
     html_exporter.template_name = 'classic'  # Usar un template que soporte gráficos
     body, _ = html_exporter.from_notebook_node(notebook_content)
     return body
@@ -76,9 +76,8 @@ def results_evaluation():
         return f"Error al cargar el notebook: {str(e)}"
     return html_content
 
-
 @app.route('/notebook/7')
-def new_notebook():
+def support_vector_machine():
     notebook_path = os.path.join(NOTEBOOKS_PATH, '3501_Support-Vector-Machine.ipynb') 
     try:
         html_content = convert_notebook_to_html(notebook_path)
@@ -87,8 +86,8 @@ def new_notebook():
     return html_content
 
 @app.route('/notebook/8')
-def results_evaluation():
-    notebook_path = os.path.join(NOTEBOOKS_PATH, '3501_Arboles.ipynb')
+def new_notebook():
+    notebook_path = os.path.join(NOTEBOOKS_PATH, '3501_Arboles-De-Decision.ipynb')  # Cambia el nombre del notebook aquí
     try:
         html_content = convert_notebook_to_html(notebook_path)
     except Exception as e:
